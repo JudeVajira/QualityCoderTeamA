@@ -7,13 +7,13 @@ namespace QualityCoderTeamA
 {
     public abstract class Leave
     {
-        public int EmployeeID { get; set; }
+        public string EmployeeID { get; set; }
 
         public bool IsPaid { get; set; }
 
         public DateTime Date { get; set; }
 
-        public Leave(int EmployeeID, DateTime Date)
+        public Leave(string EmployeeID, DateTime Date)
         {
             this.EmployeeID = EmployeeID;
             this.Date = Date;
@@ -21,7 +21,7 @@ namespace QualityCoderTeamA
 
         public abstract double getPay();
 
-        public abstract bool employeeHasLeave();
+        public abstract bool employeeLeaveAllowed();
 
     }
 }
