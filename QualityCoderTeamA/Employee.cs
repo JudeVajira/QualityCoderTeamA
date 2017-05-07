@@ -72,6 +72,7 @@ namespace QualityCoderTeamA
 		public Employee()
 		{
 
+
 		}
 
 		public Employee(string empId, string name, string gender, DateTime dob, 
