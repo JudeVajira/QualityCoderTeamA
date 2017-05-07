@@ -10,7 +10,7 @@ namespace QualityCoderTeamA
     {
         public static List<Leave> LeaveRepo = new List<Leave>();
 
-        public List<Leave> viewLeave(int employeeID, int month, int year)
+        public List<Leave> viewLeave(string employeeID, int month, int year)
         {
             List<Leave> EmployeeLeave = LeaveRepo.Where(l => (l.EmployeeID == employeeID) &&
                                                              (l.Date.Month == month) &&
@@ -19,7 +19,7 @@ namespace QualityCoderTeamA
             return EmployeeLeave;
         }
 
-        public double getLeavePeriodSalary(int employeeID, int month, int year)
+        public double getLeavePeriodSalary(string employeeID, int month, int year)
         {
             double leavePeriodSalary = 0;
 
@@ -34,7 +34,7 @@ namespace QualityCoderTeamA
             return leavePeriodSalary;
         }
 
-        public void markLeave(int employeeID, string leaveType, DateTime date)
+        public void markLeave(string employeeID, string leaveType, DateTime date)
         {
             Leave leave = null;
 
@@ -44,6 +44,17 @@ namespace QualityCoderTeamA
                     leave = new MedicalLeave(employeeID, date);
                     break;
             }
+
+            if(leave != null)
+            {
+                LeaveRepo.Add(leave);
+            }
+        }
+
+
+        private int getEmployeeLeaveAllowenceForType(int employeeID, string leaveType)
+        {
+            return -1;
         }
         
     }

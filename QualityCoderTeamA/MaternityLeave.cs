@@ -7,12 +7,12 @@ namespace QualityCoderTeamA
 {
     public class MaternityLeave : Leave
     {
-        public MaternityLeave(int EmployeeID, DateTime Date) : base(EmployeeID, Date)
+        public MaternityLeave(string EmployeeID, DateTime Date) : base(EmployeeID, Date)
         {
             IsPaid = true;
         }
 
-        public override bool employeeHasLeave()
+        public override bool employeeLeaveAllowed()
         {
             throw new NotImplementedException();
         }

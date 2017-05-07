@@ -11,23 +11,32 @@ namespace QualityCoderTeamATest
         [TestMethod]
         public void ReturnEmployeeLeaveListWhenGivenAnEmployeeID()
         {
-            int employeeID = 1, year = DateTime.Now.Year, month = DateTime.Now.Month;
+            string employeeID = "1";
+            int year = 2017, month = 5;
 
             LeaveManager leaveManager = new LeaveManager();
             LeaveManager.LeaveRepo = DummyLeaveList();
 
             List<Leave> employeeLeaves = leaveManager.viewLeave(employeeID, month, year);
 
-        }
-
-        [TestMethod]
-        public void ThrowAnExceptionWhenGivenANonExistentEmployeeID()
-        {
+            Assert.AreEqual(2, employeeLeaves.Count);
         }
 
         [TestMethod]
         public void AddLeaveForEmployee()
         {
+            string employeeID = "1";
+            int year = 2017, month = 5;
+
+            LeaveManager leaveManager = new LeaveManager();
+            LeaveManager.LeaveRepo = DummyLeaveList();
+
+            leaveManager.markLeave(employeeID, "personal", new DateTime(2017, 05, 13));
+
+            List<Leave> employeeLeaves = leaveManager.viewLeave(employeeID, month, year);
+
+            Assert.AreEqual(3, employeeLeaves.Count);
+
         }
 
         [TestMethod]
@@ -48,14 +57,14 @@ namespace QualityCoderTeamATest
         private List<Leave> DummyLeaveList()
         {
 
-            int EmployeeOne = 1;
-            Leave EmployeeOneLeaveOne = new PersonalLeave(EmployeeOne, DateTime.Now.AddMonths(-1));
-            Leave EmployeeOneLeaveTwo = new PersonalLeave(EmployeeOne, DateTime.Now.AddDays(-14));
-            Leave EmployeeOneLeaveThree = new PersonalLeave(EmployeeOne, DateTime.Now.AddDays(-16));
+            string EmployeeOne = "1";
+            Leave EmployeeOneLeaveOne = new PersonalLeave(EmployeeOne, new DateTime(2017, 04, 29));
+            Leave EmployeeOneLeaveTwo = new PersonalLeave(EmployeeOne, new DateTime(2017, 05, 01));
+            Leave EmployeeOneLeaveThree = new PersonalLeave(EmployeeOne, new DateTime(2017, 05, 06));
 
-            int EmployeeTwo = 2;
-            Leave EmployeeTwoLeaveFour = new PersonalLeave(EmployeeTwo, DateTime.Now.AddMonths(-2));
-            Leave EmployeeTwoLeaveFive = new PersonalLeave(EmployeeTwo, DateTime.Now.AddDays(-4));
+            string EmployeeTwo = "2";
+            Leave EmployeeTwoLeaveFour = new PersonalLeave(EmployeeTwo, new DateTime(2017, 04, 29));
+            Leave EmployeeTwoLeaveFive = new PersonalLeave(EmployeeTwo, new DateTime(2017, 05, 02));
 
             return new List<Leave>()
             {
