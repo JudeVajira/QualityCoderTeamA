@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AbsenseOfWork.cs" />
+    <Compile Include="BasicSalaryRate.cs" />
     <Compile Include="Benefit.cs" />
     <Compile Include="CsvDataFile.cs" />
     <Compile Include="DataFile.cs" />
