@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using QualityCoderTeamA;
-
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace QualityCoderTeamATest
 {
+    [TestClass]
     public class Salary_Process_Should
     {
 
@@ -38,6 +39,7 @@ namespace QualityCoderTeamATest
 
 
         }
+        [TestMethod]
         public void Generate_Salary_Sheet_For_All_Employees()
         {
             var employees = new List<Employee>() {
@@ -64,6 +66,7 @@ namespace QualityCoderTeamATest
                 },
             };
 
+            Assert.AreEqual(3, employees.Count);
 
             SalarySheet salarySheet = new SalarySheet(employees,4,2017);
           
