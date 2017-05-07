@@ -27,6 +27,11 @@ namespace QualityCoderTeamA
 
 		}
 
+
+        public Employee()
+        {
+                
+        }
 		#endregion
 
 	}
