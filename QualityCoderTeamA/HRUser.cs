@@ -7,5 +7,6 @@ namespace QualityCoderTeamA
 {
     public class HRUser : Employee
     {
+		
     }
 }
