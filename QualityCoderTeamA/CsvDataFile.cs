@@ -9,32 +9,40 @@ namespace QualityCoderTeamA
 {
     public class CsvDataFile : DataFile
     {
-        public List<Employee> ImportEmployeeDataFileCsv(string filepath)
+        public List<Employee> ImportEmployeeDataFileCsv(string filepath) 
         {
             if (!File.Exists(filepath))
                 throw new FileNotFoundException();
 
-            var parser = new CsvParser(File.OpenText(filepath));
-
-            bool isFirstLine = true;
-
             List<Employee> empList = new List<Employee>();
-            while (true)
+            try
             {
-                var row = parser.Read();
-                if (row == null)
-                    break;
+                var parser = new CsvParser(File.OpenText(filepath));
 
-                if (isFirstLine)
+                bool isFirstLine = true;
+
+                while (true)
                 {
-                    isFirstLine = false;
-                    continue;
+                    var row = parser.Read();
+                    if (string.IsNullOrWhiteSpace(row[0]))
+                        break;
+
+                    if (isFirstLine)
+                    {
+                        isFirstLine = false;
+                        continue;
+                    }
+
+                    Employee emp = getEmployeeFromStringArray(row);
+
+                    empList.Add(emp);
                 }
-
-                Employee emp = getEmployeeFromStringArray(row);
-
-                empList.Add(emp);
             }
+            catch (IOException)
+            {
+                throw new IOException("File In Use");
+            }
+
             return empList;
         }
 
@@ -50,6 +58,7 @@ namespace QualityCoderTeamA
 
         private Employee getEmployeeFromStringArray(string[] strArr)
         {
+			Employee		employee		= new Employee();
             var empId = strArr[0];
             var name = strArr[1];
             var gender = strArr[2];
@@ -65,7 +74,7 @@ namespace QualityCoderTeamA
             var phoneNember = strArr[7];
             var address = strArr[8];
 
-            return new Employee(empId, name, gender, dob, designation, basicSalary, epfContribution, phoneNember, address);
+            return  employee.AddEmployee(empId, name, gender, dob, designation, basicSalary, epfContribution, phoneNember, address);
         }
     }
 }
