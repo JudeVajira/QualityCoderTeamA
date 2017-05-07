@@ -3,21 +3,101 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ClassLibrary1Test
+namespace QualityCoderTeamA
 {
-    public class Employee : User
+    public class Employee
     {
-        public User User
-        {
-            get => default(User);
-            set
-            {
-            }
-        }
+		#region Members
+		private string		empID			= String.Empty;
+		private string		name			= String.Empty;
+		private string		gender			= String.Empty;
+		private DateTime	dob				= DateTime.MinValue.Date;
+		private string		designation		= String.Empty;
+		private double		basicSalary		= 0;
+		private double		epfContribution	= 0;
+		private string		phoneNumber		= String.Empty;
+		private string		address			= String.Empty;
+		#endregion
 
-        public void calculateSalary()
-        {
-            throw new System.NotImplementedException();
-        }
-    }
+		#region Properties
+		public String EmpID
+		{
+			get { return this.empID; }
+			set { this.empID = value; }
+		}
+		public String Name
+		{
+			get { return this.name; }
+			set { this.name = value; }
+		}
+		public String Gender
+		{
+			get { return this.gender; }
+			set { this.gender = value; }
+		}
+		public DateTime DOB
+		{			
+			get { return this.dob; }
+			set { this.dob = value; }
+		}
+		public String Designation
+		{
+			get { return this.designation; }
+			set { this.designation = value; }
+		}
+		public Double BasicSalary
+		{
+			get { return this.basicSalary; }
+			set { this.basicSalary = value; }
+		}
+		public Double EPFContribution
+		{
+			get { return this.epfContribution; }
+			set { this.epfContribution = value; }
+		}
+		public String PhoneNumber
+		{
+			get { return this.phoneNumber; }
+			set { this.phoneNumber = value; }
+		}
+		public String Address
+		{
+			get { return this.address; }
+			set { this.address = value; }
+		}
+		#endregion
+
+		#region Constructor
+
+		public Employee()
+		{
+
+
+		}
+	
+		public Employee(string empId, string name, string gender, Nullable<DateTime >dbo,
+						string designation, double basicSalary, double epfContribution, string phoneNember, 
+						string address)
+		{
+			this.empID				= empId;
+			this.name				= name;
+			this.gender				= gender;
+			this.dob				= dob;
+			this.designation		= designation;
+			this.basicSalary		= basicSalary;
+			this.epfContribution	= epfContribution;
+			this.phoneNumber		= phoneNember;
+			this.address			= address;
+
+		}
+
+		#endregion
+
+		#region Methods
+
+
+		#endregion
+
+	}
 }
+

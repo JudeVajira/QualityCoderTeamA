@@ -3,40 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ClassLibrary1Test
+namespace QualityCoderTeamA
 {
     public class Salary
     {
         public Employee Employee
         {
-            get => default(Employee);
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public Leave Leave
         {
-            get => default(Leave);
-            set
-            {
-            }
+
+            get;
+            set;
         }
 
         public Benefit Benefit
         {
-            get => default(Benefit);
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public QualityCoderTeamA.Deduction Deduction
         {
-            get => default(QualityCoderTeamA.Deduction);
-            set
-            {
-            }
+            get;
+            set;
         }
 
         public void calculate()

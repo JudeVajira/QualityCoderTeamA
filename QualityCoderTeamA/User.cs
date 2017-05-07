@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ClassLibrary1Test
+namespace QualityCoderTeamA
 {
-    public class User
+    public class User:Employee
     {
     }
 }
