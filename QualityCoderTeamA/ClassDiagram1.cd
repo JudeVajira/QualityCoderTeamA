@@ -38,7 +38,7 @@
   <Class Name="QualityCoderTeamA.Employee">
     <Position X="0.75" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAEAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAACAAACAAAAACAAAAAQAQAAAAAAgACAACAAAAAQAA=</HashCode>
       <FileName>Employee.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -50,7 +50,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="QualityCoderTeamA.HRUser" Collapsed="true">
-    <Position X="1" Y="4" Width="1.5" />
+    <Position X="2.25" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>HRUser.cs</FileName>
@@ -107,7 +107,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="QualityCoderTeamA.PaySheet" Collapsed="true">
-    <Position X="0.75" Y="5.5" Width="1.5" />
+    <Position X="0.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PaySheet.cs</FileName>
