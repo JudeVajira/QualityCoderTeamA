@@ -15,9 +15,21 @@ namespace QualityCoderTeamA
             throw new NotImplementedException();
         }
 
+        public double getLeavePeriodSalary(int employeeID, int month)
+        {
+            double leavePeriodSalary = 0;
+
+            foreach(Leave leave in viewLeave(employeeID, month))
+            {
+                leavePeriodSalary += leave.getPay();
+            }
+
+            return leavePeriodSalary;
+        }
+
         public void markLeave(int employeeID, string leaveType, int month)
         {
-
+            
         }
     }
 }
