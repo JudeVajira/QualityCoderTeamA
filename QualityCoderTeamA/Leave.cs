@@ -20,5 +20,8 @@ namespace QualityCoderTeamA
         }
 
         public abstract double getPay();
+
+        public abstract string getType();
+
     }
 }

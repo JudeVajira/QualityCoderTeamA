@@ -9,47 +9,31 @@ namespace QualityCoderTeamA
 {
     public class CsvDataFile : DataFile
     {
-        public List<Employee> importEmployeeDataFileCSV(string filepath)
+        public List<Employee> ImportEmployeeDataFileCsv(string filepath)
         {
+            if (!File.Exists(filepath))
+                throw new FileNotFoundException();
+
             var parser = new CsvParser(File.OpenText(filepath));
+
+            bool isFirstLine = true;
 
             List<Employee> empList = new List<Employee>();
             while (true)
             {
                 var row = parser.Read();
                 if (row == null)
-                {
                     break;
-                }
 
-                if (row[4] != "M" && row[4] != "F")
+                if (isFirstLine)
                 {
+                    isFirstLine = false;
                     continue;
                 }
 
-
-                var empId = row[0];
-                var name = row[1];
-                var gender = row[2];
-                DateTime dob = new DateTime();
-
-                if (!string.IsNullOrWhiteSpace(row[3]))
-                {
-                    dob = Convert.ToDateTime(row[3]);
-                }
-                var designation = row[4];
-                var basicSalary = Convert.ToDouble(row[5]);
-                var test = row[6].TrimEnd('%');
-                var epfContribution = Convert.ToDouble(test);
-                var phoneNember = row[7];
-                var address = row[8];
-
-
-                Employee emp = new Employee(empId, name, gender, dob, designation, basicSalary, epfContribution, phoneNember, address);
+                Employee emp = getEmployeeFromStringArray(row);
 
                 empList.Add(emp);
-
-
             }
             return empList;
         }
@@ -60,7 +44,28 @@ namespace QualityCoderTeamA
 
             string path = currentDirectory + "../../../AppData/flatfilebackup1.csv";
 
-            return importEmployeeDataFileCSV(path);
+            return ImportEmployeeDataFileCsv(path);
+        }
+
+
+        private Employee getEmployeeFromStringArray(string[] strArr)
+        {
+            var empId = strArr[0];
+            var name = strArr[1];
+            var gender = strArr[2];
+            DateTime dob = new DateTime();
+
+            if (!string.IsNullOrWhiteSpace(strArr[3]))
+            {
+                dob = Convert.ToDateTime(strArr[3]);
+            }
+            var designation = strArr[4];
+            var basicSalary = Convert.ToDouble(strArr[5]);
+            var epfContribution = Convert.ToDouble(strArr[6].TrimEnd('%'));
+            var phoneNember = strArr[7];
+            var address = strArr[8];
+
+            return new Employee(empId, name, gender, dob, designation, basicSalary, epfContribution, phoneNember, address);
         }
     }
 }
