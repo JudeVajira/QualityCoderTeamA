@@ -7,8 +7,5 @@ namespace ClassLibrary1Test
 {
     public class MedicalFee : Benefit
     {
-        public int NoOfYearsInService { get; set; }
-
-        
     }
 }
