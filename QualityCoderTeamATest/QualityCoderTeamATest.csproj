@@ -53,6 +53,7 @@
     <Compile Include="DeductionTest.cs" />
     <Compile Include="HousingTest.cs" />
     <Compile Include="LeaveManagerShould.cs" />
+    <Compile Include="OverTimeTest.cs" />
     <Compile Include="SalaryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MedicalFeeTest.cs" />
