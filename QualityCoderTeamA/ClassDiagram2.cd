@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="QualityCoderTeamA.AbsenseOfWork" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>AbsenseOfWork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.Benefit" Collapsed="true">
+    <Position X="3.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Benefit.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.CsvDataFile" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAACAgAAAAAAAAAAA=</HashCode>
+      <FileName>CsvDataFile.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="QualityCoderTeamA.Deduction" Collapsed="true">
+    <Position X="3.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Deduction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.DutyPaidLeave" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>DutyPaidLeave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.Employee" Collapsed="true">
+    <Position X="11" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgACEAKCAgAAACAAABIwAQCAEIEAgACAgCAAAAAwAA=</HashCode>
+      <FileName>Employee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.EPF" Collapsed="true">
+    <Position X="1.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EPF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.ETF" Collapsed="true">
+    <Position X="3.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ETF.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.Housing" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Housing.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="QualityCoderTeamA.HRUser">
+    <Position X="13.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>HRUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.Leave" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAACAAAAAAAAAAAAAAAAAAAAAQABAAAAAAAAAAA=</HashCode>
+      <FileName>Leave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.LeaveManager" Collapsed="true">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAACAAAAAAAAAAAAAAAAAAAAAEAAAAAIAAAAAA=</HashCode>
+      <FileName>LeaveManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.MaternityLeave" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>MaternityLeave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.MedicalFee" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MedicalFee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.MedicalLeave" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>MedicalLeave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.OverTime" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OverTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.PAYETax" Collapsed="true">
+    <Position X="5.75" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PAYETax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.PaySheet" Collapsed="true">
+    <Position X="16.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PaySheet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.PersonalLeave" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>PersonalLeave.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.Salary" Collapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIAAAAAAAAAIAAACAEAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Salary.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.SalarySheet" Collapsed="true">
+    <Position X="14.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SalarySheet.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.Tax" Collapsed="true">
+    <Position X="5.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tax.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.TravelAllowance" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TravelAllowance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QualityCoderTeamA.User">
+    <Position X="10.75" Y="7.5" Width="1.5" />
+    <InheritanceLine Type="QualityCoderTeamA.Employee" FixedToPoint="true">
+      <Path>
+        <Point X="11.75" Y="4.312" />
+        <Point X="11.75" Y="7.125" />
+        <Point X="11.5" Y="7.125" />
+        <Point X="11.5" Y="7.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="QualityCoderTeamA.DataFile" Collapsed="true">
+    <Position X="13" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataFile.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="QualityCoderTeamA.IEmployeeAllowance" Collapsed="true">
+    <Position X="14.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IEmployeeAllowance.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
