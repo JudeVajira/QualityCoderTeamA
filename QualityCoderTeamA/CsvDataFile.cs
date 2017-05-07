@@ -31,7 +31,7 @@ namespace QualityCoderTeamA
                 var empId = row[0];
                 var name = row[1];
                 var gender = row[2];
-                DateTime? dob = null;
+                DateTime dob = new DateTime();
 
                 if (!string.IsNullOrWhiteSpace(row[3]))
                 {
@@ -58,7 +58,7 @@ namespace QualityCoderTeamA
         {
             string currentDirectory = AppDomain.CurrentDomain.BaseDirectory;
 
-            string path = currentDirectory + "../../AppData/flatfilebackup1.csv";
+            string path = currentDirectory + "../../../AppData/flatfilebackup1.csv";
 
             return importEmployeeDataFileCSV(path);
         }
