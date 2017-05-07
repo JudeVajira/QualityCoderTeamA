@@ -53,6 +53,7 @@
     <Compile Include="Deduction.cs" />
     <Compile Include="DutyPaidLeave.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="EmployeeBenifits.cs" />
     <Compile Include="EPF.cs" />
     <Compile Include="ETF.cs" />
     <Compile Include="Housing.cs" />

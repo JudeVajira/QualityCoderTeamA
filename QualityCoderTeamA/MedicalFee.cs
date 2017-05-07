@@ -7,16 +7,19 @@ namespace QualityCoderTeamA
 {
     public class MedicalFee : Benefit
     {
-        public decimal calculateAnnualMedicalFee(string employeeId, int noOfYearsInService)
+        public double MedicalAllowance { get; set; }
+        public double NoOfYearsInService { get; set; }
+
+        public void calculateMonthlyMedicalFee()
         {
-            if (noOfYearsInService > 4)
-                return 500000;
-            else if (noOfYearsInService > 2)
-                return 100000;
-            else if (noOfYearsInService == 1)
-                return 50000;
+            if (NoOfYearsInService > 4)
+                MedicalAllowance = 500000 / 12;
+            else if (NoOfYearsInService > 2)
+                MedicalAllowance = 100000 / 12;
+            else if (NoOfYearsInService > 1)
+                MedicalAllowance = 50000 / 12;
             else
-                return 0;
+                MedicalAllowance = 0;
         }
     }
 }
