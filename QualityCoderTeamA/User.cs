@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QualityCoderTeamA
 {
-    public class User
+    public class User:Employee
     {
     }
 }
