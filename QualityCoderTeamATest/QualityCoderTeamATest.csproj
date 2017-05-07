@@ -52,6 +52,7 @@
     <Compile Include="DeductionTest.cs" />
     <Compile Include="SalaryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="LeaveManagerShould.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

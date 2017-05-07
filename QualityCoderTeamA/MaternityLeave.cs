@@ -7,5 +7,9 @@ namespace QualityCoderTeamA
 {
     public class MaternityLeave : Leave
     {
+        public override double GetPay()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
