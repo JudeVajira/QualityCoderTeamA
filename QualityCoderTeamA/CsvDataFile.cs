@@ -58,6 +58,7 @@ namespace QualityCoderTeamA
 
         private Employee getEmployeeFromStringArray(string[] strArr)
         {
+			Employee		employee		= new Employee();
             var empId = strArr[0];
             var name = strArr[1];
             var gender = strArr[2];
@@ -73,7 +74,7 @@ namespace QualityCoderTeamA
             var phoneNember = strArr[7];
             var address = strArr[8];
 
-            return new Employee(empId, name, gender, dob, designation, basicSalary, epfContribution, phoneNember, address);
+            return  employee.AddEmployee(empId, name, gender, dob, designation, basicSalary, epfContribution, phoneNember, address);
         }
     }
 }
