@@ -12,5 +12,14 @@ namespace QualityCoderTeamA
             get;
             set;
         }
+
+        public List<Salary> getSalarysheetForAll()
+        {
+
+
+
+            return 0;
+        }
+
     }
 }

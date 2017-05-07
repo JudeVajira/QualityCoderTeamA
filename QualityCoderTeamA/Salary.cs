@@ -26,7 +26,7 @@ namespace QualityCoderTeamA
             set;
         }
 
-        public QualityCoderTeamA.Deduction Deduction
+        public Deduction Deduction
         {
             get;
             set;
@@ -36,5 +36,7 @@ namespace QualityCoderTeamA
         {
             throw new System.NotImplementedException();
         }
+
+       
     }
 }
