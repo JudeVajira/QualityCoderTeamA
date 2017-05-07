@@ -7,16 +7,18 @@ namespace QualityCoderTeamA
 {
     public abstract class Leave
     {
+        public int EmployeeID { get; set; }
+
         public bool IsPaid { get; set; }
 
         public int NoOfDays { get; set; }
 
-        public Leave(bool IsPaid, int NoOfDays)
+        public Leave(int EmployeeID, int NoOfDays)
         {
-            this.IsPaid = IsPaid;
+            this.EmployeeID = EmployeeID;
             this.NoOfDays = NoOfDays;
         }
 
-        public abstract double GetPay();
+        public abstract double getPay();
     }
 }

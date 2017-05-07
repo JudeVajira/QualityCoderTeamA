@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using QualityCoderTeamA;
+using System.Collections.Generic;
 
 namespace QualityCoderTeamATest
 {
@@ -10,6 +11,11 @@ namespace QualityCoderTeamATest
         [TestMethod]
         public void ReturnEmployeeLeaveListWhenGivenAnEmployeeID()
         {
+            int employeeID = 1, month = 9;
+
+            LeaveManager leaveManager = new LeaveManager();
+            List<Leave> employeeLeaves = leaveManager.viewLeave(employeeID, month);
+
         }
 
         [TestMethod]
@@ -35,6 +41,15 @@ namespace QualityCoderTeamATest
         [TestMethod]
         public void ThrowExceptionWhenAddingLeaveWithoutHavingLeaveAllowence()
         {
+        }
+
+        private List<Leave> DummyLeaveList() {
+
+            return new List<Leave>()
+            {
+
+
+            };
         }
     }
 }
