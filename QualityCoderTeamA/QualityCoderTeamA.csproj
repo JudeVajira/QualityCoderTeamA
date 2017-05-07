@@ -55,6 +55,7 @@
     <Compile Include="ETF.cs" />
     <Compile Include="Housing.cs" />
     <Compile Include="HRUser.cs" />
+    <Compile Include="IEmployeeAllowance.cs" />
     <Compile Include="Leave.cs" />
     <Compile Include="LeaveManager.cs" />
     <Compile Include="MaternityLeave.cs" />
