@@ -7,9 +7,14 @@ namespace QualityCoderTeamA
 {
     public class PersonalLeave : Leave
     {
-        public PersonalLeave(int EmployeeID, int NoOfDays) : base(EmployeeID, NoOfDays)
+        public PersonalLeave(int EmployeeID, DateTime Date) : base(EmployeeID, Date)
         {
             IsPaid = true;
+        }
+
+        public override bool employeeHasLeave()
+        {
+            throw new NotImplementedException();
         }
 
         public override double getPay()

@@ -10,26 +10,41 @@ namespace QualityCoderTeamA
     {
         public static List<Leave> LeaveRepo = new List<Leave>();
 
-        public List<Leave> viewLeave(int employeeID, int month)
+        public List<Leave> viewLeave(int employeeID, int month, int year)
         {
-            throw new NotImplementedException();
+            List<Leave> EmployeeLeave = LeaveRepo.Where(l => (l.EmployeeID == employeeID) &&
+                                                             (l.Date.Month == month) &&
+                                                             (l.Date.Year == year)).
+                                                             ToList();
+            return EmployeeLeave;
         }
 
-        public double getLeavePeriodSalary(int employeeID, int month)
+        public double getLeavePeriodSalary(int employeeID, int month, int year)
         {
             double leavePeriodSalary = 0;
 
-            foreach(Leave leave in viewLeave(employeeID, month))
+            foreach(Leave leave in viewLeave(employeeID, month, year))
             {
-                leavePeriodSalary += leave.getPay();
+                if (leave.IsPaid)
+                {
+                    leavePeriodSalary += leave.getPay();
+                }
             }
 
             return leavePeriodSalary;
         }
 
-        public void markLeave(int employeeID, string leaveType, int month)
+        public void markLeave(int employeeID, string leaveType, DateTime date)
         {
-            
+            Leave leave = null;
+
+            switch (leaveType.ToLower())
+            {
+                case "personal":
+                    leave = new MedicalLeave(employeeID, date);
+                    break;
+            }
         }
+        
     }
 }

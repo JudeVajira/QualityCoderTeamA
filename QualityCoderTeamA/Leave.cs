@@ -11,17 +11,17 @@ namespace QualityCoderTeamA
 
         public bool IsPaid { get; set; }
 
-        public int NoOfDays { get; set; }
+        public DateTime Date { get; set; }
 
-        public Leave(int EmployeeID, int NoOfDays)
+        public Leave(int EmployeeID, DateTime Date)
         {
             this.EmployeeID = EmployeeID;
-            this.NoOfDays = NoOfDays;
+            this.Date = Date;
         }
 
         public abstract double getPay();
 
-        public abstract string getType();
+        public abstract bool employeeHasLeave();
 
     }
 }
