@@ -7,8 +7,9 @@ namespace QualityCoderTeamATest
     public class TravelAllowanceTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void Calculate_Travel_Allowance_For_Employee_With_No_Vehicle()
         {
+            string allowanceType = "";
         }
     }
 }
