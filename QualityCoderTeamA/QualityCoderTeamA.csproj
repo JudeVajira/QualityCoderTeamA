@@ -56,6 +56,7 @@
     <Compile Include="Housing.cs" />
     <Compile Include="HRUser.cs" />
     <Compile Include="Leave.cs" />
+    <Compile Include="LeaveManager.cs" />
     <Compile Include="MaternityLeave.cs" />
     <Compile Include="MedicalFee.cs" />
     <Compile Include="MedicalLeave.cs" />

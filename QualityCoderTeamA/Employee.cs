@@ -74,8 +74,8 @@ namespace QualityCoderTeamA
 
 
 		}
-
-		public Employee(string empId, string name, string gender, DateTime dob, 
+	
+		public Employee(string empId, string name, string gender, Nullable<DateTime >dbo,
 						string designation, double basicSalary, double epfContribution, string phoneNember, 
 						string address)
 		{
