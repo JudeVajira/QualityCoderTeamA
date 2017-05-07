@@ -13,11 +13,18 @@ namespace QualityCoderTeamA
 
         public double CalculateRegularOT(Employee employee)
         {
-            double basicSalaryHourlyRate = employee.BasicSalary / (20 * 8);
             double eligibleNoOfOtHours = this.NoOfHours;
             if (this.NoOfHours > 4)
                 eligibleNoOfOtHours = 4;
-            return BasicHourlyRate * eligibleNoOfOtHours * 1.5;
+            return (this.BasicHourlyRate* 1.5) * eligibleNoOfOtHours;
+        }
+
+        public double CalculateDoubleOT(Employee employee)
+        {
+            double eligibleNoOfOtHours = this.NoOfHours;
+            if (this.NoOfHours > 8)
+                eligibleNoOfOtHours = 8;
+            return (this.BasicHourlyRate * 2) * eligibleNoOfOtHours;
         }
     }
 }

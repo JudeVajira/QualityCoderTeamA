@@ -9,6 +9,8 @@ namespace QualityCoderTeamA
     public class BasicSalaryRate : Employee
     {
         private Employee employee;
+        private const int NoOfWorkingDays = 20;
+        private const int NoOfWorkingHours = 8;
 
         public BasicSalaryRate(Employee employee)
         {
@@ -17,12 +19,12 @@ namespace QualityCoderTeamA
 
         public double getBasicSalaryHourlyRate()
         {
-            return this.BasicSalary / (20 / 8);
+            return this.employee.BasicSalary / (NoOfWorkingDays * NoOfWorkingHours);
         }
 
         public double getBasicSalaryDailyRate()
         {
-            return this.BasicSalary / 20;
+            return this.employee.BasicSalary / NoOfWorkingDays;
         }
     }
 }
