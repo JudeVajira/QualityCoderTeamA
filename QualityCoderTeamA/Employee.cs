@@ -8,15 +8,16 @@ namespace QualityCoderTeamA
     public class Employee
     {
 		#region Members
-		private string		empID			= String.Empty;
-		private string		name			= String.Empty;
-		private string		gender			= String.Empty;
-		private DateTime  	dob				= DateTime.MinValue.Date;
-		private string		designation		= String.Empty;
-		private double		basicSalary		= 0;
-		private double		epfContribution	= 0;
-		private string		phoneNumber		= String.Empty;
-		private string		address			= String.Empty;
+		private string			empID			= String.Empty;
+		private string			name			= String.Empty;
+		private string			gender			= String.Empty;
+		private DateTime  		dob				= DateTime.MinValue.Date;
+		private string			designation		= String.Empty;
+		private double			basicSalary		= 0;
+		private double			epfContribution	= 0;
+		private string			phoneNumber		= String.Empty;
+		private string			address			= String.Empty;
+		private List<Employee>	employeeList	= null;
 		#endregion
 
 		#region Properties
@@ -65,13 +66,18 @@ namespace QualityCoderTeamA
 			get { return this.address; }
 			set { this.address = value; }
 		}
+		public List<Employee> EmployeeList
+		{
+			get { return this.employeeList; }
+			set { this.employeeList = value; }
+		}
+
 		#endregion
 
 		#region Constructor
 
 		public Employee()
 		{
-
 
 		}
 	
@@ -95,6 +101,28 @@ namespace QualityCoderTeamA
 
 		#region Methods
 
+		public void ImportDataFileCSV(string filePath)
+		{
+			CsvDataFile		employeeData		= new CsvDataFile();
+			this.employeeList					= employeeData.getEmployeeList();
+		} 
+
+		public Employee AddEmployee(string empId, string name, string gender, DateTime dob, 
+								string designation,double basicSalary, double epfContribution,
+								string phoneNember, string address)
+		{
+			Employee		employee			= new Employee(empId, name, gender, 
+																dob, designation, basicSalary, 
+																epfContribution, phoneNember, address);
+			return employee;
+		}
+
+		public Employee ViewEmployeeDetails(string empID)
+		{
+			Employee		empdetail			= EmployeeList.Where(a=> a.EmpID == empID).FirstOrDefault<Employee>();
+			return empdetail;
+					
+		}
 
 		#endregion
 

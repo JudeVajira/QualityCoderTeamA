@@ -7,9 +7,14 @@ namespace QualityCoderTeamA
 {
     public class AbsenseOfWork : Leave
     {
-        public AbsenseOfWork(int EmployeeID, int NoOfDays) : base(EmployeeID, NoOfDays)
+        public AbsenseOfWork(string EmployeeID, DateTime Date) : base(EmployeeID, Date)
         {
             IsPaid = false;
+        }
+
+        public override bool employeeLeaveAllowed()
+        {
+            throw new NotImplementedException();
         }
 
         public override double getPay()

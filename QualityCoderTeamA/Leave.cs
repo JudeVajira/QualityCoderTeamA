@@ -7,21 +7,21 @@ namespace QualityCoderTeamA
 {
     public abstract class Leave
     {
-        public int EmployeeID { get; set; }
+        public string EmployeeID { get; set; }
 
         public bool IsPaid { get; set; }
 
-        public int NoOfDays { get; set; }
+        public DateTime Date { get; set; }
 
-        public Leave(int EmployeeID, int NoOfDays)
+        public Leave(string EmployeeID, DateTime Date)
         {
             this.EmployeeID = EmployeeID;
-            this.NoOfDays = NoOfDays;
+            this.Date = Date;
         }
 
         public abstract double getPay();
 
-        public abstract string getType();
+        public abstract bool employeeLeaveAllowed();
 
     }
 }

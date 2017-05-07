@@ -7,9 +7,14 @@ namespace QualityCoderTeamA
 {
     public class DutyPaidLeave : Leave
     {
-        public DutyPaidLeave(int EmployeeID, int NoOfDays) : base(EmployeeID, NoOfDays)
+        public DutyPaidLeave(string EmployeeID, DateTime Date) : base(EmployeeID, Date)
         {
             IsPaid = true;
+        }
+
+        public override bool employeeLeaveAllowed()
+        {
+            throw new NotImplementedException();
         }
 
         public override double getPay()

@@ -7,9 +7,14 @@ namespace QualityCoderTeamA
 {
     public class MedicalLeave : Leave
     {
-        public MedicalLeave(int EmployeeID, int NoOfDays) : base(EmployeeID, NoOfDays)
+        public MedicalLeave(string EmployeeID, DateTime Date) : base(EmployeeID, Date)
         {
             IsPaid = true;
+        }
+
+        public override bool employeeLeaveAllowed()
+        {
+            throw new NotImplementedException();
         }
 
         public override double getPay()
