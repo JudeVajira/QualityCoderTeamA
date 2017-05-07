@@ -11,6 +11,11 @@ namespace QualityCoderTeamA
     {
         public List<Employee> importEmployeeDataFileCSV(string filepath)
         {
+            if (!File.Exists(filepath))
+            {
+                throw new FileNotFoundException();
+            }
+
             var parser = new CsvParser(File.OpenText(filepath));
 
             List<Employee> empList = new List<Employee>();

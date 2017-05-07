@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text;
 using System.Collections.Generic;
+using System.IO;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using QualityCoderTeamA;
 
@@ -36,9 +37,11 @@ namespace QualityCoderTeamATest
         }
 
         [TestMethod]
+        [ExpectedException(typeof(FileNotFoundException))]
         public void ThrowExceptionWhenFileNotFound()
         {
-
+            CsvDataFile csvData = new CsvDataFile();
+            List<Employee> empList = csvData.importEmployeeDataFileCSV("D:\\Downloads ALT\\xflatfilebackup1.csv");
         }
     }
 }
