@@ -10,7 +10,7 @@ namespace QualityCoderTeamATest
         [TestMethod]
         public void Calculate_Travel_Allowance_For_Employee()
         {
-             Employee            
+           // Employee employee = new Employee("","","",);       
         }
     }
 }
