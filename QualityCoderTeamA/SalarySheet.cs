@@ -7,22 +7,32 @@ namespace QualityCoderTeamA
 {
     public class SalarySheet
     {
-        public PaySheet PaySheet
+        public SalarySheet(List<Employee> empList,int PayrollMonth,int PayrollYear)
         {
-            get;
-            set;
+
+            getSalarysheetGenerator(empList,PayrollMonth,PayrollYear);
+
+
         }
 
-        public List<Salary> getSalarysheetForAll(List<Employee> empList)
+
+
+        public void getSalarysheetForAll()
         {
-            List<Salary> salarySheet = new List<Salary>();
-            foreach(var empLst in empList)
+
+        }
+        public List<PaySheet> getSalarysheetGenerator(List<Employee> empList,int PayrollMonth,int PayrollYear)
+        {
+            List<PaySheet> paySheets = new List<PaySheet>();
+            LeaveManager leaveForSalary = new LeaveManager();
+            double leaveDeduction = 0; 
+            foreach (Employee empLst in empList)
             {
-               
+               // leaveDeduction = leaveForSalary.getLeavePeriodSalary(empLst.EmpID,PayrollMonth,PayrollYear);
 
                  
             }
-            return salarySheet;
+            return paySheets;
         }
 
     }

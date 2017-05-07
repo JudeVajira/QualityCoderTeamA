@@ -10,7 +10,7 @@ namespace QualityCoderTeamA
     {
         public static List<Leave> LeaveRepo = new List<Leave>();
 
-        public List<Leave> viewLeave(int employeeID, int month, int year)
+        public List<Leave> viewLeave(string employeeID, int month, int year)
         {
             List<Leave> EmployeeLeave = LeaveRepo.Where(l => (l.EmployeeID == employeeID) &&
                                                              (l.Date.Month == month) &&
@@ -19,7 +19,7 @@ namespace QualityCoderTeamA
             return EmployeeLeave;
         }
 
-        public double getLeavePeriodSalary(int employeeID, int month, int year)
+        public double getLeavePeriodSalary(string employeeID, int month, int year)
         {
             double leavePeriodSalary = 0;
 

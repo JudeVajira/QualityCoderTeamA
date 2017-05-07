@@ -65,9 +65,8 @@ namespace QualityCoderTeamATest
             };
 
 
-            SalarySheet salarySheet = new SalarySheet();
-            List<Salary> listOfSalary =  salarySheet.getSalarysheetForAll(employees);
-
+            SalarySheet salarySheet = new SalarySheet(employees,4,2017);
+          
 
         }
 

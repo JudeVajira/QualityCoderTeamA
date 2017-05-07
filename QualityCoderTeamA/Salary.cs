@@ -7,13 +7,13 @@ namespace QualityCoderTeamA
 {
     public class Salary
     {
-        public int EmpID { get; set; }
+        public string EmpID { get; set; }
         
         public List<Benefit> Benifits { get; set; }
         public List<Deduction> Deductions { get; set; }
         public List<Leave> Leaves { get; set; }
 
-        public Salary(Int16 EmpID )
+        public Salary(string EmpID )
         {
 
         }
