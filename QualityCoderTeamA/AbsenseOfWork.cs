@@ -8,5 +8,14 @@ namespace QualityCoderTeamA
     public class AbsenseOfWork : Leave
     {
         private string test;
+
+        public AbsenseOfWork(bool IsPaid, int NoOfDays) : base(IsPaid, NoOfDays)
+        {
+        }
+
+        public override double GetPay()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

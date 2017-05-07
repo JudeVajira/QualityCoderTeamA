@@ -49,13 +49,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CsvDataFileShould.cs" />
     <Compile Include="DeductionTest.cs" />
+    <Compile Include="LeaveManagerShould.cs" />
     <Compile Include="SalaryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MedicalFeeTest.cs" />
     <Compile Include="TravelAllowanceTest.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="AppData\flatfilebackup1.csv" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
