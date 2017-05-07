@@ -35,22 +35,5 @@ namespace QualityCoderTeamATest
             Assert.IsInstanceOfType(empList[0], typeof(Employee));
 
         }
-
-        [TestMethod]
-        [ExpectedException(typeof(InvalidOperationException),"test")]
-        public void ThrowExceptionWhenFileNotFound_When_FileNotFound()
-        {
-            CsvDataFile csvData = new CsvDataFile();
-            List<Employee> empList = csvData.ImportEmployeeDataFileCsv("D:\\Downloads ALT\\xflatfilebackup1.csv");
-        }
-
-
-        [TestMethod]
-        [ExpectedException(typeof(IOException))]
-        public void ThrowExceptionWhenFileInUse_When_FileInUse()
-        {
-            CsvDataFile csvData = new CsvDataFile();
-            List<Employee> empList = csvData.ImportEmployeeDataFileCsv("D:\\Downloads ALT\\flatfilebackup1.csv");
-        }
     }
 }
