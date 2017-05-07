@@ -7,13 +7,8 @@ namespace ClassLibrary1Test
 {
     public class Employee : User
     {
-        public User User
-        {
-            get => default(User);
-            set
-            {
-            }
-        }
+		public User Use { get; set; }
+		
 
         public void calculateSalary()
         {
