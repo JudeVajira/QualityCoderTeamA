@@ -34,7 +34,7 @@ namespace QualityCoderTeamA
                 // leaveDeduction = leaveForSalary.getLeavePeriodSalary(empLst.EmpID,PayrollMonth,PayrollYear);
                 paySheetTestList.EmpID = empLst.EmpID;
                 paySheetTestList.EmployeeName = empLst.Name;
-                paySheetTestList.NetSalary = Convert.ToDouble("50000");
+                paySheetTestList.NetSalary = Convert.ToDouble(empLst.BasicSalary);
 
                 paySheets.Add(paySheetTestList); 
             }
