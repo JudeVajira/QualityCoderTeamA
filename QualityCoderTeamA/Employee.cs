@@ -101,7 +101,7 @@ namespace QualityCoderTeamA
 
 		#region Methods
 
-		public void ImportDataFileCSV(string filePath)
+		public void ImportDataFileCSV()
 		{
 			CsvDataFile		employeeData		= new CsvDataFile();
 			this.employeeList					= employeeData.getEmployeeList();
