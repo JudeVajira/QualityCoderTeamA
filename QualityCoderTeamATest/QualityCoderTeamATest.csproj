@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="CsvDataFileShould.cs" />
     <Compile Include="DeductionTest.cs" />
+    <Compile Include="HousingTest.cs" />
     <Compile Include="LeaveManagerShould.cs" />
     <Compile Include="SalaryTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
