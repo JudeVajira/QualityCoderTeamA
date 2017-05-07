@@ -9,10 +9,8 @@ namespace ClassLibrary1Test
     {
         public PaySheet PaySheet
         {
-            get => default(PaySheet);
-            set
-            {
-            }
+            get;
+            set;
         }
     }
 }
