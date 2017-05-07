@@ -9,5 +9,6 @@ namespace QualityCoderTeamA
     {
         public string EmployeeId { get; set; }
         public decimal Amount { get; set; }
+        public string BenefitType { get; set; }
     }
 }
