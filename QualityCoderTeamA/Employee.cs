@@ -11,7 +11,7 @@ namespace QualityCoderTeamA
 		private string		empID			= String.Empty;
 		private string		name			= String.Empty;
 		private string		gender			= String.Empty;
-		private DateTime	dob				= DateTime.MinValue.Date;
+		private DateTime  	dob				= DateTime.MinValue.Date;
 		private string		designation		= String.Empty;
 		private double		basicSalary		= 0;
 		private double		epfContribution	= 0;
@@ -75,7 +75,7 @@ namespace QualityCoderTeamA
 
 		}
 	
-		public Employee(string empId, string name, string gender, Nullable<DateTime >dbo,
+		public Employee(string empId, string name, string gender, DateTime dob,
 						string designation, double basicSalary, double epfContribution, string phoneNember, 
 						string address)
 		{
