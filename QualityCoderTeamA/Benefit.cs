@@ -7,5 +7,7 @@ namespace ClassLibrary1Test
 {
     public class Benefit
     {
+        public string EmployeeId { get; set; }
+        public decimal Amount { get; set; }
     }
 }

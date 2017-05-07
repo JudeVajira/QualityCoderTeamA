@@ -5,7 +5,8 @@ using System.Text;
 
 namespace QualityCoderTeamA
 {
-    public interface Deduction
+    public class Deduction
     {
+        public int MyProperty { get; set; }
     }
 }
