@@ -19,7 +19,7 @@ namespace QualityCoderTeamA
         public double NetSalary { get; set; }
                                            // public List<Leave> Leaves { get; set; }
 
-        public PaySheet(string EmpID)
+        public PaySheet()
         {
 
         }

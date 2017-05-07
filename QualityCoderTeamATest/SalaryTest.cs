@@ -66,11 +66,13 @@ namespace QualityCoderTeamATest
                 },
             };
 
-            Assert.AreEqual(3, employees.Count);
+           // Assert.AreEqual(3, employees.Count);
 
             SalarySheet salarySheet = new SalarySheet(employees,4,2017);
-          
 
+            List<PaySheet> salarySheetListTest = salarySheet.getSalarysheetForAll();
+
+            Assert.AreEqual(3, salarySheetListTest.Count);
         }
 
 
