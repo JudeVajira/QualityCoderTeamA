@@ -120,7 +120,13 @@ namespace QualityCoderTeamA
 		public Employee ViewEmployeeDetails(string empID)
 		{
 			Employee		empdetail			= EmployeeList.Where(a=> a.EmpID == empID).FirstOrDefault<Employee>();
-			return empdetail;
+
+			if(empdetail != null)
+			{			
+				return empdetail;
+			}
+
+			throw new NullReferenceException("Employee not found");		
 					
 		}
 
