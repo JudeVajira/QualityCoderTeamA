@@ -17,7 +17,7 @@ namespace QualityCoderTeamATest
         public void ReturnAListOfEmployees_When_CSVFilePathGiven()
         {
             CsvDataFile csvData = new CsvDataFile();
-            List<Employee> empList = csvData.importEmployeeDataFileCSV("D:\\Downloads ALT\\flatfilebackup1.csv");
+            List<Employee> empList = csvData.ImportEmployeeDataFileCsv("D:\\Downloads ALT\\flatfilebackup1.csv");
 
             Assert.IsNotNull(empList);
             Assert.IsInstanceOfType(empList[0], typeof(Employee));
@@ -41,7 +41,7 @@ namespace QualityCoderTeamATest
         public void ThrowExceptionWhenFileNotFound()
         {
             CsvDataFile csvData = new CsvDataFile();
-            List<Employee> empList = csvData.importEmployeeDataFileCSV("D:\\Downloads ALT\\xflatfilebackup1.csv");
+            List<Employee> empList = csvData.ImportEmployeeDataFileCsv("D:\\Downloads ALT\\xflatfilebackup1.csv");
         }
     }
 }
