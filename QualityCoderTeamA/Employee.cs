@@ -7,31 +7,33 @@ namespace QualityCoderTeamA
 {
     public class Employee
     {
+		#region Properties
 		public String EmpID { get; set; }
-
 		public String Name { get; set; }
-
 		public String Gender { get; set; }
-
 		public DateTime DOB { get; set; }
-
 		public String Designation { get; set; }
-
 		public Double BasicSalary { get; set; }
-
 		public Double EPFContribution { get; set; }
-
 		public String PhoneNumber { get; set; }
-
 		public String Address { get; set; }
-		public User Use { get; set; }
-		
-		
+		#endregion
 
-        public void calculateSalary()
+		#region Constructor
+
+		public Employee(string empId, string name, string gender, DateTime dob, string designation, double basicSalary, double epfContribution,
+						string phoneNember, string address)
+		{
+
+		}
+
+
+        public Employee()
         {
-            throw new System.NotImplementedException();
+                
         }
-    }
+		#endregion
+
+	}
 }
 
