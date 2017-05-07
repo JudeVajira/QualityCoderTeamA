@@ -7,11 +7,11 @@ namespace QualityCoderTeamA
 {
     public class TravelAllowance : Benefit
     {
-        public bool hasPetrolAllowance { get; set; }
+        public bool hasAllowance { get; set; }
 
         public decimal calculateTravelAllowance()
         {
-            if (this.hasPetrolAllowance)
+            if (this.hasAllowance)
                 return 15000;
             else
                 return 20000;

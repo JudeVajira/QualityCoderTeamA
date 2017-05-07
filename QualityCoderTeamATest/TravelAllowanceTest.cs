@@ -14,7 +14,7 @@ namespace QualityCoderTeamATest
             TravelAllowance travelAllowance = new TravelAllowance();
             output = travelAllowance.calculateTravelAllowance();
 
-            Assert.AreEqual(15000, output);
+            Assert.AreEqual(20000, output);
         }
     }
 }

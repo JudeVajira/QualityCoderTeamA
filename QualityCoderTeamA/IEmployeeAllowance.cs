@@ -8,6 +8,6 @@ namespace QualityCoderTeamA
 {
     interface IEmployeeAllowance
     {
-        bool hasPetrolAllowance { get; set; }
+        bool hasAllowance { get; set; }
     }
 }
