@@ -34,7 +34,7 @@ namespace QualityCoderTeamA
             return leavePeriodSalary;
         }
 
-        public void markLeave(int employeeID, string leaveType, DateTime date)
+        public void markLeave(string employeeID, string leaveType, DateTime date)
         {
             Leave leave = null;
 
@@ -44,6 +44,17 @@ namespace QualityCoderTeamA
                     leave = new MedicalLeave(employeeID, date);
                     break;
             }
+
+            if(leave != null)
+            {
+                LeaveRepo.Add(leave);
+            }
+        }
+
+
+        private int getEmployeeLeaveAllowenceForType(int employeeID, string leaveType)
+        {
+            return -1;
         }
         
     }
