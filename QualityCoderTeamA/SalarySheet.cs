@@ -13,12 +13,16 @@ namespace QualityCoderTeamA
             set;
         }
 
-        public List<Salary> getSalarysheetForAll()
+        public List<Salary> getSalarysheetForAll(List<Employee> empList)
         {
+            List<Salary> salarySheet = new List<Salary>();
+            foreach(var empLst in empList)
+            {
+               
 
-
-
-            return 0;
+                 
+            }
+            return salarySheet;
         }
 
     }

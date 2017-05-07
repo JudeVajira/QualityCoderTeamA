@@ -63,9 +63,10 @@ namespace QualityCoderTeamATest
                     BasicSalary =Convert.ToDouble("25,500.30")
                 },
             };
-            
 
-            getSalarysheetForAll(employees);
+
+            SalarySheet salarySheet = new SalarySheet();
+            List<Salary> listOfSalary =  salarySheet.getSalarysheetForAll(employees);
 
 
         }

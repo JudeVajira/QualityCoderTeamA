@@ -7,36 +7,16 @@ namespace QualityCoderTeamA
 {
     public class Salary
     {
-        public Employee Employee
+        public int EmpID { get; set; }
+        
+        public List<Benefit> Benifits { get; set; }
+        public List<Deduction> Deductions { get; set; }
+        public List<Leave> Leaves { get; set; }
+
+        public Salary(Int16 EmpID )
         {
-            get;
-            set;
+
         }
 
-        public Leave Leave
-        {
-
-            get;
-            set;
-        }
-
-        public Benefit Benefit
-        {
-            get;
-            set;
-        }
-
-        public Deduction Deduction
-        {
-            get;
-            set;
-        }
-
-        public void calculate()
-        {
-            throw new System.NotImplementedException();
-        }
-
-       
     }
 }

@@ -91,11 +91,6 @@ namespace QualityCoderTeamA
 
 		}
 
-
-        public Employee()
-        {
-                
-        }
 		#endregion
 
 		#region Methods
