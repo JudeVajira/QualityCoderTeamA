@@ -5,7 +5,8 @@ using System.Text;
 
 namespace QualityCoderTeamA
 {
-    public class DataFile
+    public interface DataFile
     {
+        List<Employee> getEmployeeList();
     }
 }
