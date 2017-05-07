@@ -49,6 +49,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CsvDataFileShould.cs" />
     <Compile Include="DeductionTest.cs" />
     <Compile Include="LeaveManagerShould.cs" />
     <Compile Include="SalaryTest.cs" />
